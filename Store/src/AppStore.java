@@ -88,10 +88,14 @@ public class AppStore {
                 System.out.println("Introduce phone number");
                 String phoneNumber = scanner.next();
                 List<String> phoneNumbers = new ArrayList<>();
+                phoneNumbers.add(phoneNumber);
 
-                Employee employee = new Employee(name, lastName, nationalId, age, yearsOfExperience, civilStatus,phoneNumbers);
-                System.out.println(employee);
+
+                Employee employee = new Employee(name, lastName, nationalId, age, yearsOfExperience,
+                        civilStatus,phoneNumbers);
                 employee.add(employee);
+                System.out.println(employee);
+
 
 
             } else if (choice==4){
